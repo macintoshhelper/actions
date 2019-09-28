@@ -8,6 +8,6 @@ if [ -z "$KUBECONFIG_PATH" ]; then
     exit 1
 fi
 
-export KUBECONFIG=$KUBECONFIG_PATH
+#export KUBECONFIG=$KUBECONFIG_PATH
 
-sh -c "kubectl $*"
+sh -c "kubectl --kubeconfig=$KUBECONFIG_PATH $*"
