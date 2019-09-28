@@ -11,7 +11,7 @@ LABEL "com.github.actions.description"="Use to run kubectl commands."
 LABEL "com.github.actions.icon"="box"
 LABEL "com.github.actions.color"="blue"
 
-COPY LICENSE README.md /
+# COPY LICENSE README.md /
 
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
